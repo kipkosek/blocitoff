@@ -1,2 +1,15 @@
-<h1>Blocitoff</h1>
-<p>A better kind of list.</p>
+<div class="jumbotron text-center">
+  <div class="name">Blocitoff</div>
+  <div class="tagline">A better kind of list.</div>
+
+<p>
+  <% if user_signed_in? %>
+      <%= link_to "See My List", class: "btn btn-primary btn-margins" %>
+  <% else %>
+  <div class="button-margins">
+      <%= link_to "Log In", new_user_session_path, class: "btn btn-primary btn-margins" %>
+      <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-info btn-margins" %>
+  </div>
+  <% end %>
+</p>
+</div>
