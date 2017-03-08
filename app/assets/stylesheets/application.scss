@@ -1,3 +1,19 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
 @import 'bootstrap';
 
 .top-buffer {
@@ -25,6 +41,10 @@
   margin-right: 30px;
 }
 
+table {
+  width: 80%;
+}
+
 th {
   font-size: 24px;
   border-bottom: 1px solid gray;
@@ -34,4 +54,16 @@ th {
 td {
   border-bottom: 1px solid gray;
   padding: 15px;
+}
+
+#column-item {
+  width: 50%;
+}
+
+#column-days {
+  width: 15%;
+}
+
+#column-completed {
+  width: 15%;
 }
