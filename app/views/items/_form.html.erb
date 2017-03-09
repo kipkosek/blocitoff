@@ -1,0 +1,10 @@
+<%= form_for @item do |f| %>
+  <div class="row">
+    <div class="form-group col-md-8">
+      <%= f.text_field :name, class: 'form-control', placeholder: "Enter new item" %>
+    </div>
+    <span class="form-group">
+      <%= f.submit "Add To List", class: 'btn btn-success' %>
+    </span>
+  </div>
+<% end %>
