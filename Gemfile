@@ -12,6 +12,7 @@ end
 group :development do
   gem 'sqlite3'
 end
+gem 'bootstrap-sass'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -30,7 +31,6 @@ gem 'turbolinks'
 # bundle exec rake doc:rails generates the API under doc/api.
 # gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'bootstrap'
 gem 'devise'
 gem 'figaro'
 # Use ActiveModel has_secure_password
