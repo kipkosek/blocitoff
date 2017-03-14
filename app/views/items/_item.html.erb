@@ -1,5 +1,5 @@
 <tr>
   <td><%= item.name %></td>
-  <td></td>
-  <td><%= link_to "", item, method: :delete, class: 'glyphicon glyphicon-ok' %></td>
+  <td class="text-center"><%= distance_of_time_in_words(Time.now, item.created_at + 7.days) %></td>
+  <td class="text-center"><%= link_to "", item, method: :delete, class: 'glyphicon glyphicon-remove' %></td>
 </tr>
