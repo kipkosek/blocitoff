@@ -1,5 +1,9 @@
-<tr>
+<tr id="item-<%= item.id %>">
   <td><%= item.name %></td>
-  <td class="text-center"><%= distance_of_time_in_words(Time.now, item.created_at + 7.days) %></td>
-  <td class="text-center"><%= link_to "", item, method: :delete, class: 'glyphicon glyphicon-remove' %></td>
+  <td class="text-center <%= 'red' if (Time.now - item.created_at) / 1.day.seconds >= 5 %>">
+    <%= distance_of_time_in_words(Time.now, item.created_at + 7.days) %>
+  </td>
+  <td class="text-center"><%= link_to "", item, method: :delete, remote: true, class: 'glyphicon glyphicon-remove' %></td>
 </tr>
+
+<%# 'red' if (Time.now - item.created_at) / 1.day.seconds >= 4 %>
