@@ -1,15 +1,15 @@
 <div class="jumbotron text-center">
   <div class="name">Blocitoff</div>
-  <div class="tagline">A better kind of list.</div>
+  <div class="tagline">The only list you need.</div>
 
-<p>
-  <% if user_signed_in? %>
-    <%= after_sign_in_path_for(current_user) %>
-  <% else %>
-  <div class="button-margins">
-    <%= link_to "Log In", new_user_session_path, class: "btn btn-primary btn-margins" %>
-    <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-info btn-margins" %>
-  </div>
-  <% end %>
-</p>
+  <p>
+    <% if user_signed_in? %>
+      <%= after_sign_in_path_for(current_user) %>
+    <% else %>
+    <div class="button-margins">
+      <%= link_to "Log In", new_user_session_path, class: "btn btn-primary btn-margins" %>
+      <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-info btn-margins" %>
+    </div>
+    <% end %>
+  </p>
 </div>

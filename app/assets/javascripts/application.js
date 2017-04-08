@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require_tree .
 
+// Sample Javascript Function
 // $(document).ready( function() {
 //   //alert("hey!");
 // });
