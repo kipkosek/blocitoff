@@ -1,10 +1,10 @@
-##Blocitoff
+## Blocitoff
 
 **A to-do list app using Ruby on Rails.**
 
-![Screenshot](app/assets/Screenshot1.png)
+![Screenshot](Screenshot1.png)
 
-###How It Works
+### How It Works
 * **Devise** gem for signing up and logging in
 * **Faker** gem for seeding data
 * **AJAX** to add and delete items
