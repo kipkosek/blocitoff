@@ -1,8 +1,8 @@
-## Blocitoff
+# Blocitoff
 
 **A to-do list app using Ruby on Rails.**
 
-![Screenshot](Screenshot1.png)
+![Screenshot](app/assets/images/Screenshot1.png)
 
 ### How It Works
 * **Devise** gem for signing up and logging in
